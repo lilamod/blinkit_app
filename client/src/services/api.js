@@ -1,6 +1,6 @@
 // Use environment variable for API URL
 // Vite requires VITE_ prefix for client-side environment variables
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "https://blinkit-app.onrender.com/api";
 
 // Add error handling helper
 const handleError = (error, context = 'API') => {
